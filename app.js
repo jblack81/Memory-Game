@@ -27,27 +27,27 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: 'ice-cream',
-            img: 'ice-cream.png'
+            img: 'images/ice-cream.png'
         },
         {
             name: 'ice-cream',
-            img: 'ice-cream.png'
+            img: 'images/ice-cream.png'
         },
         {
             name: 'milkshake',
-            img: 'milkshake.png'
+            img: 'images/milkshake.png'
         },
         {
-            name: 'milshake',
-            img: 'milkshake.png'
-        },
-        {
-            name: 'pizza',
-            img: 'pizza.png'
+            name: 'milkshake',
+            img: 'images/milkshake.png'
         },
         {
             name: 'pizza',
-            img: 'pizza.png'
+            img: 'images/pizza.png'
+        },
+        {
+            name: 'pizza',
+            img: 'images/pizza.png'
         }
     ]
 
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var cardsChosen = []
     var cardsChosenId = []
     var cardsWon = []
+    createBoard()
 
 
     //create my board
@@ -66,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var card = document.createElement('img')
             card.setAttribute('src', 'images/blank.png')
             card.setAttribute('data-id', i)
-            card.addEventListener('click', flipcard)
+            card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
     }
@@ -108,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(checkForMatch, 500)
         }
 
-        createBoard()
+    
     }
 
 
